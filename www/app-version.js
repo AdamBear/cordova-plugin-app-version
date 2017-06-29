@@ -20,6 +20,8 @@
  * THE SOFTWARE.
  */
 
+if(!(cordova.platformId === 'android' || cordova.platformId === 'ios')) return null;
+
 var exec = require('cordova/exec');
 var channel = require('cordova/channel');
 var utils = require('cordova/utils');
